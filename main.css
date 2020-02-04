@@ -1,0 +1,30 @@
+.questions {
+    border-radius: 20px;
+}
+
+.textbox {
+    border-radius: 20px;
+    border: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid red;
+}
+
+#pic1 {
+    background: url('images/FAVPNG_asterix-the-gaul-obelix-dogmatix_ZqyCw2qS.png') no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 200px;
+    height: 500px;
+    float: right;
+}
+
+#pic2 {
+    background: url('images/FAVPNG_obelix-asterix-the-gaul-getafix-dogmatix_pFGxmvGC.png') no-repeat;
+    background-size: contain;
+    float: left;
+    width: 300px;
+    height: 500px;
+    background-position: left;
+}
