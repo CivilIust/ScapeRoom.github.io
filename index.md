@@ -1,4 +1,4 @@
-<<<<<<< HEAD <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -445,6 +445,5 @@ http://www.templatemo.com/tm-468-onetel
 
     </body>
 
-    >>>>>>> b480fc19f9174749683050b7cd6da48ff8d6433f
 
     </html>
