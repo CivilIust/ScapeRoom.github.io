@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+CREDITS
+
+Free Templates
+
+http://www.templatemo.com
+
+Photos by 
+
+http://unsplash.com
+
+=======
+CREDITS
+
+Free Templates
+
+http://www.templatemo.com
+
+Photos by 
+
+http://unsplash.com
+
+>>>>>>> b480fc19f9174749683050b7cd6da48ff8d6433f
+http://pixabay.com
