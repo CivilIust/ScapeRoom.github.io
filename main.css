@@ -1,3 +1,5 @@
+/* 
+>>>>>>> kossher
 .questions {
     border-radius: 20px;
 }
@@ -26,5 +28,132 @@
     float: left;
     width: 300px;
     height: 500px;
+    background-position: left; */
+
+.questions {
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+}
+
+.divider-one {
+    box-shadow: 5px 5px 5px #c13f10bd
+}
+
+.divider-two {
+    box-shadow: 5px 5px 5px #009999b6;
+}
+
+.divider-three {
+    box-shadow: 5px 5px 5px #aab937b0;
+}
+
+.textbox {
+    border-radius: 20px;
+    border: none;
+    color: black;
+    width: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 5px 5px 5px #3a3a3abd;
+}
+
+#home {
+    margin-top: -50px;
+}
+
+#hintLayout {
+    background-size: contain;
+    background-position: center;
+    width: inherit;
+    font-size: larger;
+    color: azure;
+    height: auto;
+    font-style: oblique;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 200px;
+}
+
+#pic1 {
+    background: url('images/FAVPNG_asterix-the-gaul-obelix-dogmatix_ZqyCw2qS.png') no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 200px;
+    height: 500px;
+    float: right;
+}
+
+#pic2 {
+    background: url('images/FAVPNG_obelix-asterix-the-gaul-getafix-dogmatix_pFGxmvGC.png') no-repeat;
+    background-size: contain;
+    float: left;
+    width: 300px;
+    height: 500px;
     background-position: left;
+}
+
+#riddles_video {
+    display: none;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.ticks {
+    display: none;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #3a3a3abd;
+}
+
+.btnRiddles {
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: aquamarine;
+    margin-left: auto;
+    background-color: rgb(10, 119, 68);
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px #3a3a3abd;
+    text-align: center;
+    text-decoration-color: black;
+    width: auto;
+}
+
+#Group_ID {
+    display: block;
+    border-radius: 10px;
+    margin-left: auto;
+    font-size: larger;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 200px;
+}
+
+#Password {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    width: 200px;
+}
+
+#LoginButton {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50px;
 }
