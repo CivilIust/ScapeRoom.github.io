@@ -76,7 +76,7 @@
 }
 
 #pic1 {
-    background: url('/Images/FAVPNG_asterix-the-gaul-obelix-dogmatix_ZqyCw2qS.png') no-repeat;
+    background: url('Images/FAVPNG_asterix-the-gaul-obelix-dogmatix_ZqyCw2qS.png') no-repeat;
     background-size: contain;
     background-position: right;
     width: 200px;
@@ -85,7 +85,7 @@
 }
 
 #pic2 {
-    background: url('/Images/FAVPNG_obelix-asterix-the-gaul-getafix-dogmatix_pFGxmvGC.png') no-repeat;
+    background: url('Images/FAVPNG_obelix-asterix-the-gaul-getafix-dogmatix_pFGxmvGC.png') no-repeat;
     background-size: contain;
     float: left;
     width: 300px;
