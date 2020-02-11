@@ -24,7 +24,7 @@ http://www.templatemo.com/tm-468-onetel
 
 </head>
 
-<body>
+<body style="background-color: rgb(46, 32, 0);">
 
     <!-- navigation -->
 
@@ -49,54 +49,75 @@ http://www.templatemo.com/tm-468-onetel
 	</div>
 </div>		 -->
 
+
+
+
     <!-- home section -->
     <div id="home">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-sm-3"></div>
-                <div class="col-md-7 col-sm-9">
-                    <!-- <h3>welcome to</h3> -->
-                    <h1>اسکیپ روم</h1>
-                </div>
-            </div>
             <div id="pic1"></div>
             <div id="pic2"></div>
+            <!-- <div id="hintLayout">
+                <p id="hintCount">" تعداد راهنما "</p>
+            </div> -->
         </div>
 
         <!-- divider section -->
-        <div class="divider">
+        <div id="Riddles" class="divider" style="display: none;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6" onclick="RiddleClicked(1)">
                         <div class="divider-wrapper divider-one questions">
-                            <i class="fa fa-laptop"></i>
-                            <h2>About page</h2>
-                            <p>Simple House is a light-weight CSS template for your restaurant or cafe website. This is a custom responsive minimal layout.</p>
-                            <input type="text" class="textbox" id="txbx1">
+                            <embed id="tick1" src="tick.svg" alt="tik" width="60" height="60" class="ticks">
+                            <h2>معمای 1</h2>
+                            <p></p>
+                            <input type="text" class="textbox" placeholder="جواب" id="txbx1">
+                            <button class="btnRiddles" id="btnRiddle1" onclick="RiddleButtonClicked(1)">ثبت جواب معمای 1</button>
+
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6" onclick="RiddleClicked(2)">
                         <div class="divider-wrapper divider-two questions">
-                            <i class="fa fa-mobile"></i>
-                            <h2>Easy to use</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            <input type="text" class="textbox" id="txbx1">
+                            <embed id="tick2" src="tick.svg" alt="tik" width="60" height="60" class="ticks">
+                            <h2>معمای 2</h2>
+                            <p></p>
+                            <input type="text" class="textbox" placeholder="جواب" id="txbx2">
+                            <button class="btnRiddles" id="btnRiddle2" onclick="RiddleButtonClicked(2)">ثبت جواب معمای 2</button>
+
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-md-4 col-sm-12" onclick="RiddleClicked(3)">
                         <div class="divider-wrapper divider-three questions">
-                            <i class="fa fa-life-ring"></i>
-                            <h2>Quick Support</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            <input type="text" class="textbox" id="txbx1">
+                            <embed id="tick3" src="tick.svg" alt="tik" width="60" height="60" class="ticks">
+                            <h2>معمای 3</h2>
+                            <p></p>
+                            <input type="text" class="textbox" placeholder="جواب" id="txbx3">
+                            <button class="btnRiddles" id="btnRiddle3" onclick="RiddleButtonClicked(3)">ثبت جواب معمای 3</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- about section -->
-        <!-- <div id="about">
+        <!-- <p id="demo">demo</p> -->
+        <div id="LoginPage">
+            <input id="Group_ID" placeholder="شماره گروه"></input>
+            <br>
+            <input id="Password" placeholder="رمز عبور"></input>
+            <br>
+            <button id="LoginButton" onclick="RequestToLogin()">ورود</button>
+
+            </button>
+        </div>
+
+        <video id="riddles_video" controls>
+            <source id="video_source"  type="video/mp4" >	
+            </video>
+
+    </div>
+
+    <!-- about section -->
+    <!-- <div id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
@@ -112,8 +133,8 @@ http://www.templatemo.com/tm-468-onetel
 	</div>
 </div> -->
 
-        <!-- portfolio section -->
-        <!-- <div id="portfolio">
+    <!-- portfolio section -->
+    <!-- <div id="portfolio">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-offset-2 col-md-8 col-sm-12">
@@ -153,8 +174,8 @@ http://www.templatemo.com/tm-468-onetel
 	</div>
 </div>		 -->
 
-        <!-- footer section -->
-        <!-- <footer>
+    <!-- footer section -->
+    <!-- <footer>
 	<div class="container">
 		<div class="row">
         
@@ -191,8 +212,8 @@ http://www.templatemo.com/tm-468-onetel
 	</div>
 </footer> -->
 
-        <!-- copyright section -->
-        <!-- <div class="copyright">
+    <!-- copyright section -->
+    <!-- <div class="copyright">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
@@ -213,11 +234,11 @@ http://www.templatemo.com/tm-468-onetel
 </div> -->
 
 
-        <!-- javascript js -->
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/nivo-lightbox.min.js"></script>
-        <script src="js/custom.js"></script>
+    <!-- javascript js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
