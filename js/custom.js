@@ -36,7 +36,7 @@ function RiddleClicked(position) {
     $('#riddles_video').css("display", "block");
     switch (position) {
         case 1:
-            $('#home video source').attr('src', 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4');
+            $('#home video source').attr('src', './videos/riddle1.mp4');
             break;
 
         case 2:
