@@ -36,15 +36,15 @@ function RiddleClicked(position) {
     $('#riddles_video').css("display", "block");
     switch (position) {
         case 1:
-            $('#home video source').attr('src', './videos/riddle1.mp4');
+            $('#home video source').attr('src', 'videos/riddle1.mp4');
             break;
 
         case 2:
-            $('#home video source').attr('src', './videos/riddle2.mp4');
+            $('#home video source').attr('src', 'videos/riddle2.mp4');
             break;
 
         case 3:
-            $('#home video source').attr('src', './videos/riddle3.mp4');
+            $('#home video source').attr('src', 'videos/riddle3.mp4');
             break;
 
         default:
