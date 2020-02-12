@@ -20,7 +20,7 @@ function initialize() {
         map.setCenter(center);
     });
 }
-
+ 
 function calculateCenter() {
     center = map.getCenter();
 }
