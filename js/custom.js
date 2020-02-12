@@ -20,7 +20,7 @@ function initialize() {
         map.setCenter(center);
     });
 }
- 
+
 function calculateCenter() {
     center = map.getCenter();
 }
@@ -89,6 +89,9 @@ function RequestToLogin() {
 
                 $('#Riddles').css("display", "block");
                 $('#LoginPage').css("display", "none");
+                $('#geTitle').hide();
+                $('#faTitle').hide();
+
             };
         }
     });
