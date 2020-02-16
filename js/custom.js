@@ -74,17 +74,17 @@ function RequestToLogin() {
                 groupInfo = d.Data;
 
                 if (groupInfo.SolvedRiddle1 == 1)
-                    $("#tick1").css({ 'display': 'inline', 'src': '/Images/c.jpg' });
+                    $("#tick1").css({ 'display': 'inline', 'src': 'Images/c.jpg' });
                 else
                     $("#tick1").css('display', 'none');
 
                 if (groupInfo.SolvedRiddle2 == 1)
-                    $("#tick2").css({ 'display': 'inline', 'src': '/Images/d.jpg' });
+                    $("#tick2").css({ 'display': 'inline', 'src': 'Images/d.jpg' });
                 else
                     $("#tick2").css('display', 'none');
 
                 if (groupInfo.SolvedRiddle3 == 1)
-                    $("#tick3").css({ 'display': 'inline', 'src': '/Images/e.jpg' });
+                    $("#tick3").css({ 'display': 'inline', 'src': 'Images/e.jpg' });
                 else
                     $("#tick3").css('display', 'none');
 
@@ -116,7 +116,7 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick1").css({ 'display': 'inline', 'src': '/Images/c.jpg' });
+                            $("#tick1").css({ 'display': 'inline', 'src': 'Images/c.jpg' });
                         } else {
                             alert(d.Message);
                         };
@@ -139,7 +139,7 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick2").css({ 'display': 'inline', 'src': '/Images/d.jpg' });
+                            $("#tick2").css({ 'display': 'inline', 'src': 'Images/d.jpg' });
                         } else {
                             alert(d.Message);
                         };
@@ -161,7 +161,7 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick3").css({ 'display': 'inline', 'src': '/Images/e.jpg' });
+                            $("#tick3").css({ 'display': 'inline', 'src': 'Images/e.jpg' });
                         } else {
                             alert(d.Message);
                         };
