@@ -52,6 +52,7 @@ function RiddleClicked(position) {
             break;
     }
     $("#home video")[0].load();
+    $("#home video")[0].pause();
 }
 
 
@@ -73,17 +74,17 @@ function RequestToLogin() {
                 groupInfo = d.Data;
 
                 if (groupInfo.SolvedRiddle1 == 1)
-                    $("#tick1").css('display', 'inline');
+                    $("#tick1").css({ 'display': 'inline', 'src': '/Images/c.jpg' });
                 else
                     $("#tick1").css('display', 'none');
 
                 if (groupInfo.SolvedRiddle2 == 1)
-                    $("#tick2").css('display', 'inline');
+                    $("#tick2").css({ 'display': 'inline', 'src': '/Images/d.jpg' });
                 else
                     $("#tick2").css('display', 'none');
 
                 if (groupInfo.SolvedRiddle3 == 1)
-                    $("#tick3").css('display', 'inline');
+                    $("#tick3").css({ 'display': 'inline', 'src': '/Images/e.jpg' });
                 else
                     $("#tick3").css('display', 'none');
 
@@ -115,7 +116,7 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick1").css('display', 'inline');
+                            $("#tick1").css({ 'display': 'inline', 'src': '/Images/c.jpg' });
                         } else {
                             alert(d.Message);
                         };
@@ -138,7 +139,7 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick2").css('display', 'inline');
+                            $("#tick2").css({ 'display': 'inline', 'src': '/Images/d.jpg' });
                         } else {
                             alert(d.Message);
                         };
@@ -147,7 +148,7 @@ function RiddleButtonClicked(position) {
             }
             break;
         case 3:
-            if (document.getElementById('txbx3').value == 'lake' || document.getElementById('txbx3').value == 'دریاچه') {
+            if (document.getElementById('txbx3').value == "fake") {
                 var sendInfo = {
                     ID: $('#Group_ID').val(),
                     SolvedRiddle3: true
@@ -160,7 +161,7 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick3").css('display', 'inline');
+                            $("#tick3").css({ 'display': 'inline', 'src': '/Images/e.jpg' });
                         } else {
                             alert(d.Message);
                         };
