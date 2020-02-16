@@ -73,21 +73,28 @@ function RequestToLogin() {
             if (d.ResultCode == 0) {
                 groupInfo = d.Data;
 
-                if (groupInfo.SolvedRiddle1 == 1)
-                    $("#tick1").css({ 'display': 'inline', 'src': 'Images/c.jpg' });
-                else
+                if (groupInfo.SolvedRiddle1 == 1) {
+                    $("#tick1").css('display', 'inline');
+                    $("#cross1").css('display', 'none');
+                } else {
                     $("#tick1").css('display', 'none');
+                    $("#cross1").css('display', 'none');
+                }
 
-                if (groupInfo.SolvedRiddle2 == 1)
-                    $("#tick2").css({ 'display': 'inline', 'src': 'Images/d.jpg' });
-                else
+                if (groupInfo.SolvedRiddle2 == 1) {
+                    $("#tick2").css('display', 'inline');
+                    $("#cross2").css('display', 'none');
+                } else {
                     $("#tick2").css('display', 'none');
-
-                if (groupInfo.SolvedRiddle3 == 1)
-                    $("#tick3").css({ 'display': 'inline', 'src': 'Images/e.jpg' });
-                else
+                    $("#cross2").css('display', 'none');
+                }
+                if (groupInfo.SolvedRiddle3 == 1) {
+                    $("#tick3").css('display', 'inline');
+                    $("#cross3").css('display', 'none');
+                } else {
                     $("#tick3").css('display', 'none');
-
+                    $("#cross3").css('display', 'none');
+                }
                 $('#Riddles').css("display", "block");
                 $('#LoginPage').css("display", "none");
                 $('#geTitle').hide();
@@ -116,12 +123,16 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick1").css({ 'display': 'inline', 'src': 'Images/c.jpg' });
+                            $("#tick1").css('display', 'inline');
+                            $("#cross1").css('display', 'none');
                         } else {
                             alert(d.Message);
                         };
                     }
                 });
+            } else {
+                $("#tick1").css('display', 'none');
+                $("#cross1").css('display', 'inline');
             }
             break;
         case 2:
@@ -139,16 +150,20 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick2").css({ 'display': 'inline', 'src': 'Images/d.jpg' });
+                            $("#tick2").css('display', 'inline');
+                            $("#cross2").css('display', 'none');
                         } else {
                             alert(d.Message);
                         };
                     }
                 });
+            } else {
+                $("#tick2").css('display', 'none');
+                $("#cross2").css('display', 'inline');
             }
             break;
         case 3:
-            if (document.getElementById('txbx3').value == "fake") {
+            if (document.getElementById('txbx3').value == 'fake') {
                 var sendInfo = {
                     ID: $('#Group_ID').val(),
                     SolvedRiddle3: true
@@ -161,12 +176,16 @@ function RiddleButtonClicked(position) {
                     data: JSON.stringify(sendInfo),
                     success: function(d) {
                         if (d.ResultCode == 0) {
-                            $("#tick3").css({ 'display': 'inline', 'src': 'Images/e.jpg' });
+                            $("#tick3").css('display', 'inline');
+                            $("#cross3").css('display', 'none');
                         } else {
                             alert(d.Message);
                         };
                     }
                 });
+            } else {
+                $("#tick3").css('display', 'none');
+                $("#cross3").css('display', 'inline');
             }
             break;
     }
