@@ -104,9 +104,10 @@
 
 .ticks {
     display: none;
-    width: 50%;
+    border-radius: 20px;
+    max-width: 70%;
     height: auto;
-    border-radius: 50%;
+    width: auto;
     box-shadow: 5px 5px 5px #3a3a3abd;
 }
 
