@@ -91,6 +91,8 @@ function RequestToLogin() {
                 if (groupInfo.SolvedRiddle3 == 1) {
                     $("#tick3").css('display', 'inline');
                     $("#cross3").css('display', 'none');
+                    if ($('#tick2').is(":visible") && $('#tick1').is(":visible"))
+                        $('#witch_photo').css('display', 'inline');
                 } else {
                     $("#tick3").css('display', 'none');
                     $("#cross3").css('display', 'none');
@@ -125,6 +127,8 @@ function RiddleButtonClicked(position) {
                         if (d.ResultCode == 0) {
                             $("#tick1").css('display', 'inline');
                             $("#cross1").css('display', 'none');
+                            if ($('#tick2').is(":visible") && $('#tick3').is(":visible"))
+                                $('#witch_photo').css('display', 'inline');
                         } else {
                             alert(d.Message);
                         };
@@ -152,6 +156,9 @@ function RiddleButtonClicked(position) {
                         if (d.ResultCode == 0) {
                             $("#tick2").css('display', 'inline');
                             $("#cross2").css('display', 'none');
+                            alert($('#witch_photo').attr('display'));
+                            if ($('#tick1').is(":visible") && $('#tick3').is(":visible"))
+                                $('#witch_photo').css('display', 'inline');
                         } else {
                             alert(d.Message);
                         };
@@ -178,6 +185,9 @@ function RiddleButtonClicked(position) {
                         if (d.ResultCode == 0) {
                             $("#tick3").css('display', 'inline');
                             $("#cross3").css('display', 'none');
+
+                            if ($('#tick2').is(":visible") && $('#tick1').is(":visible"))
+                                $('#witch_photo').css('display', 'inline');
                         } else {
                             alert(d.Message);
                         };
